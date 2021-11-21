@@ -1,0 +1,60 @@
+2017-07-27
+- Added support for NMEA GN*** messages in addition to the normal GP*** messages.
+- Added support for a GGA fix quality of 9 (WAAS on NovAtel receivers)
+
+2014-12-26
+- Added saving of window state. App will now open in the same location/size as it was previously closed.
+
+2014-12-05
+- Fixed a bug with NTRIP tread not terminating when connections time out. Could cause multiple threads to be running simultaneously.
+
+2013-11-24
+-Fixed minor bug in generated GGA sentences related to padding zeros after the decimal place.
+
+2012-12-17
+-GGA sentences will be sent every 10 seconds if needed, for both manual locations and GGAs from the receiver.
+
+2011-03-14
+-Added option for Raw TCP/IP Socket connections. No authentication, no locations sent in.
+
+2010-09-07
+-Added automatic receiver configuration support for NovAtel OEMV receivers
+-Added elevation history display
+
+2010-04-29
+-Added notification of last correction age when RTK fix is lost.
+
+2010-04-02
+-Fixed bug with serial port names when using a bluetooth serial port.
+-Removed audio alerts from satellite visibility changes (ie. 7 to 8 sats).
+-Logging of NMEA data now only saves GGA sentences. It used to save everything.
+-Added auto-update support.
+-Better error handling of disconnected bluetooth serial ports.
+
+2009-12-09
+-Improved NMEA parsing code
+-Fix bug with optional display info being hidden after changing options.
+
+2009-11-18
+-Added an information bar at the top of the screen.
+-Added a button to clear the event log.
+-Added the ability to record NMEA data to a file.
+
+2009-06-26
+-Improved error handling when the Caster doesn't respond normally.
+
+2009-05-25
+-Added option for audio alert when fix quality changes, base station ID changes, or NTRIP Disconnects.
+-Added option for sending the GGA in only once upon connection, or every 10 seconds.
+
+2009-05-01
+-Added H-DOP level to the log when GPS Fix type changes
+
+2009-04-30
+-Resolved an error when the server doesn't respond to a connection request.
+
+2009-04-29
+-Added the option to automatically save the log messages to a file for later troubleshooting.
+
+2009-04-28
+-Original Release
